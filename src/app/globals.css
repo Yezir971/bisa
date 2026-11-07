@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, corporate, business, nord, dim, emerald, synthwave;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.drawer {
+  grid-auto-columns: max-content minmax(0, 1fr);
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.drawer-content {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.toast {
+  max-width: min(24rem, calc(100% - 2rem));
+  width: auto;
+}
